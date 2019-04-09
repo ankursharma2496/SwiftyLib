@@ -15,6 +15,8 @@
 		E73BC06A225CAF9100B66AF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E73BC068225CAF9100B66AF5 /* Main.storyboard */; };
 		E73BC06C225CAF9300B66AF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E73BC06B225CAF9300B66AF5 /* Assets.xcassets */; };
 		E73BC06F225CAF9300B66AF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E73BC06D225CAF9300B66AF5 /* LaunchScreen.storyboard */; };
+		E73BC075225CB39A00B66AF5 /* SwiftyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73BC074225CB39A00B66AF5 /* SwiftyLib.swift */; };
+		E73BC079225CB76300B66AF5 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = E73BC078225CB76300B66AF5 /* .travis.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		E73BC06B225CAF9300B66AF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E73BC06E225CAF9300B66AF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E73BC070225CAF9300B66AF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E73BC074225CB39A00B66AF5 /* SwiftyLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLib.swift; sourceTree = "<group>"; };
+		E73BC078225CB76300B66AF5 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 			children = (
 				E73BC023225CAE2200B66AF5 /* SwiftLib.h */,
 				E73BC024225CAE2200B66AF5 /* Info.plist */,
+				E73BC074225CB39A00B66AF5 /* SwiftyLib.swift */,
+				E73BC078225CB76300B66AF5 /* .travis.yml */,
 			);
 			path = SwiftLib;
 			sourceTree = "<group>";
@@ -199,6 +205,7 @@
 				TargetAttributes = {
 					E73BC01F225CAE2200B66AF5 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					E73BC028225CAE2300B66AF5 = {
 						CreatedOnToolsVersion = 10.1;
@@ -233,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E73BC079225CB76300B66AF5 /* .travis.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E73BC075225CB39A00B66AF5 /* SwiftyLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +444,7 @@
 		E73BC035225CAE2300B66AF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -452,6 +462,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ankur.SwiftLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,6 +471,7 @@
 		E73BC036225CAE2300B66AF5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -485,6 +497,7 @@
 		E73BC038225CAE2300B66AF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7KUQ57MGWA;
 				INFOPLIST_FILE = SwiftLibTests/Info.plist;
@@ -503,6 +516,7 @@
 		E73BC039225CAE2300B66AF5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7KUQ57MGWA;
 				INFOPLIST_FILE = SwiftLibTests/Info.plist;
